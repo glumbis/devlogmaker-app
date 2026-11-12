@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevlogMaker: turn your commits into a narrated devlog video</title>
+<meta name="description" content="DevlogMaker is a free desktop app for Windows that turns your game's git history into a narrated devlog video. Claude writes the script, you review it, ElevenLabs voices it, and it renders and publishes when you say so.">
+<link rel="canonical" href="https://glumbis.github.io/devlogmaker-app/">
+<meta name="theme-color" content="#0F2640">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/app-icon.png">
+<link rel="preload" href="assets/fonts/saira-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DevlogMaker">
+<meta property="og:title" content="DevlogMaker: turn your commits into a narrated devlog video">
+<meta property="og:description" content="Desktop app for game developers: your git history becomes a scripted, voiced, rendered devlog video, reviewed by you before anything is posted.">
+<meta property="og:url" content="https://glumbis.github.io/devlogmaker-app/">
+<meta property="og:image" content="https://glumbis.github.io/devlogmaker-app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DevlogMaker logo with the text: Your commits, turned into a narrated devlog video.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DevlogMaker: turn your commits into a narrated devlog video">
+<meta name="twitter:description" content="Your git history becomes a scripted, voiced, rendered devlog video, reviewed by you before anything is posted.">
+<meta name="twitter:image" content="https://glumbis.github.io/devlogmaker-app/assets/og.png">
+<script src="assets/config.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- header:start (build_legal.py copies this header into the generated legal pages) -->
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="index.html">
+      <img class="mark" src="assets/mark-on-dark.png" alt="" width="36" height="36">
+      <img class="word" src="assets/wordmark-on-dark.png" alt="DevlogMaker" width="150" height="20">
+    </a>
+    <ul class="nav-links">
+      <li class="hide-sm"><a href="index.html#how">How it works</a></li>
+      <li class="hide-sm"><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+      <li class="hide-sm"><a href="index.html#faq">FAQ</a></li>
+      <li><a class="btn" href="download.html">Download</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- header:end -->
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">For indie game developers</span>
+      <h1>Your commits, turned into a <span class="accent">narrated devlog video.</span></h1>
+      <p class="lead">DevlogMaker reads what changed in your game since the last devlog, has Claude write the script, lets you edit every line and shot, voices it with ElevenLabs and renders a finished video. It posts to YouTube, Discord, Bluesky or Mastodon only when you confirm.</p>
+      <div class="cta">
+        <a class="btn lg" href="download.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+          Download for free
+        </a>
+        <a class="btn secondary lg" href="#pricing">Why it's free</a>
+      </div>
+      <p class="fine">Windows (64-bit); macOS coming later. Free. Bring your own ElevenLabs key, plus an Anthropic key or Claude Desktop.</p>
+    </div>
+    <img class="hero-mark" src="assets/mark-on-dark.png" alt="" width="256" height="256">
+  </div>
+</section>
+
+<section class="section" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2 id="how-title">From git log to finished video in four steps</h2>
+      <p>You keep making the game. DevlogMaker does the writing, voicing and editing, and stops for your approval where it matters.</p>
+    </div>
+    <ol class="steps">
+      <li>
+        <h3>Point it at your game</h3>
+        <p>Pick your game's folder (a git repository). DevlogMaker collects the commits, filtered code changes, docs and new art since your last devlog.</p>
+      </li>
+      <li>
+        <h3>Claude writes the script</h3>
+        <p>Changes are grouped into topics players care about, then turned into narration and a shot list at the length, tone and audience you choose.</p>
+      </li>
+      <li>
+        <h3>You review and edit</h3>
+        <p>The run pauses so you can rewrite narration and swap shots. After rendering, reorder and retime clips on the timeline and render again.</p>
+      </li>
+      <li>
+        <h3>Voice, render, publish</h3>
+        <p>ElevenLabs voices the script, FFmpeg renders the video with captions and music, and it's published to the platforms you pick after you confirm.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section alt" id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Features</span>
+      <h2 id="features-title">Built for how game developers actually work</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="9" r="2.5"/><path d="M6 8.5v7M18 11.5c0 3-3 3.5-6 4.5"/></svg></div>
+        <h3>Reads your real history</h3>
+        <p>Commits, filtered diffs, docs and new assets. Generated files, lockfiles and vendored code are dropped, and you can exclude anything with ignore rules.</p>
+      </div>
+      <div class="feature">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg></div>
+        <h3>A script you control</h3>
+        <p>Choose length, tone (casual, hype, technical, cozy), audience and depth. Edit the narration and shots before anything is voiced.</p>
+      </div>
+      <div class="feature">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+        <h3>Natural narration</h3>
+        <p>Pick an ElevenLabs voice, teach it how to say your made-up names, and change one paragraph without re-voicing the rest.</p>
+      </div>
+      <div class="feature">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9.5v5l4.5-2.5z"/></svg></div>
+        <h3>Footage from your game</h3>
+        <p>Use your own clips, record the game window from any engine, capture web games and sites straight from the browser, or add the capture plugin for Godot or Unity (early) for smooth, scripted shots.</p>
+      </div>
+      <div class="feature">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+        <h3>Code, diff and title cards</h3>
+        <p>Syntax-highlighted code, "+1,204 / −380 lines" stats and title cards in your brand colors, so every video looks finished even without footage.</p>
+      </div>
+      <div class="feature">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="13" height="9" rx="1.5"/><rect x="17" y="4" width="5" height="14" rx="1.5"/></svg></div>
+        <h3>Landscape or Shorts</h3>
+        <p>16:9 1080p or 9:16 vertical, with burned-in captions or an .srt file, background music ducked under the voice, and a thumbnail.</p>
+      </div>
+      <div class="feature">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></div>
+        <h3>Publish after you confirm</h3>
+        <p>YouTube (title, description, tags, chapters, captions, thumbnail; unlisted by default), Discord, Bluesky and Mastodon, plus a ready-to-paste post for itch.io and Steam.</p>
+      </div>
+      <div class="feature">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div>
+        <h3>Runs on your computer</h3>
+        <p>Projects, clips and videos stay on your machine. Keys are kept in the system keychain. Only the text the AI needs is sent to it.</p>
+      </div>
+      <div class="feature">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Know the cost first</h3>
+        <p>Before each run you see the estimated cost. A typical devlog is well under a dollar on your own keys.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing" aria-labelledby="pricing-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2 id="pricing-title">Free. You only pay the AI providers you choose.</h2>
+      <p>The whole app is free to download and use. There's no account with us. Pick how the script gets written:</p>
+    </div>
+    <div class="plans">
+      <article class="plan featured" aria-labelledby="plan-claude">
+        <span class="badge">No Anthropic key</span>
+        <h3 id="plan-claude">With Claude Desktop</h3>
+        <p class="who">For people who already use Claude.</p>
+        <div class="price">Free</div>
+        <div class="price-note">Claude writes the script with your Claude plan. You pay ElevenLabs for the voice.</div>
+        <ul>
+          <li>Connect in the app: Settings &rarr; Claude Desktop</li>
+          <li>Ask Claude to set up your game: it finds the right folders and capture settings</li>
+          <li>Approve the script in chat or in the app</li>
+          <li>Your ElevenLabs API key for narration</li>
+        </ul>
+        <a class="btn" href="download.html">Download</a>
+      </article>
+
+      <article class="plan" aria-labelledby="plan-own">
+        <h3 id="plan-own">With your own keys</h3>
+        <p class="who">For developers who already have Anthropic and ElevenLabs accounts.</p>
+        <div class="price">Free</div>
+        <div class="price-note">You pay Anthropic and ElevenLabs directly, at their prices. Usually well under a dollar per devlog.</div>
+        <ul>
+          <li>Every feature of the app</li>
+          <li>Your Anthropic API key for the script (Sonnet by default)</li>
+          <li>Your ElevenLabs API key for narration</li>
+          <li>Optional: a Google Gemini key for generated background music</li>
+          <li>Keys stored in your system keychain</li>
+        </ul>
+        <a class="btn outline" href="download.html">Download</a>
+      </article>
+    </div>
+    <div class="pricing-fine">
+      <p>A paid plan that includes the AI, so you don't need any keys, is planned for later. Everything above stays free.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2 id="faq-title">Questions, answered</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>What do I need to use it?</summary>
+        <div><p>A Windows PC (64-bit; a Mac version is coming later), <a href="https://git-scm.com/downloads">git</a> installed, and a game project that is a git repository. FFmpeg and everything else is bundled. See <a href="download.html#requirements">system requirements</a>.</p></div>
+      </details>
+      <details>
+        <summary>Does it work with my engine?</summary>
+        <div><p>Yes. With no setup, videos use code and diff cards, title cards, new images from your repo and clips you drop into a folder. Window recording works with any engine. For scripted, scene-accurate shots there are capture plugins for Godot and Unity, which are still early.</p></div>
+      </details>
+      <details>
+        <summary>Do I need to know video editing?</summary>
+        <div><p>No. DevlogMaker cuts the shots to the narration, adds captions, music and transitions, and renders the video. You can still reorder and retime clips on the timeline if you want to.</p></div>
+      </details>
+      <details>
+        <summary>What gets sent to the AI? Is my code private?</summary>
+        <div>
+          <p>Your project stays on your computer. To write the script, DevlogMaker sends Claude (Anthropic) your commit messages, the filtered code changes, your project docs, file names and your game's name and pitch. To voice it, the narration text goes to ElevenLabs. Gameplay clips and the rendered video are not sent to either.</p>
+          <p>You can keep files out with ignore rules. Code cards show code from your repo in the video, so check them during review if your code is private. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Is it really free?</summary>
+        <div><p>Yes. DevlogMaker itself costs nothing and needs no account. The AI services cost what their providers charge: ElevenLabs for the narration, and either your Anthropic API key or your existing Claude plan (through Claude Desktop) for the script.</p></div>
+      </details>
+      <details>
+        <summary>Can I use it without an Anthropic API key?</summary>
+        <div><p>Yes, with Claude Desktop. In DevlogMaker open Settings, choose Claude Desktop and Connect, then restart Claude Desktop. Now you can ask Claude to set up your game and make a devlog: it inspects your project folder, picks the settings, and writes the script itself. You review it, and DevlogMaker voices and renders the video.</p></div>
+      </details>
+      <details>
+        <summary>Will it post anything without asking me?</summary>
+        <div><p>No. Publishing always needs your explicit confirmation, and YouTube uploads are unlisted by default. You can also skip publishing and upload the video yourself.</p></div>
+      </details>
+      <details>
+        <summary>Who owns the videos and scripts?</summary>
+        <div><p>You do. DevlogMaker claims no ownership of your projects, scripts or videos. AI-written text can contain mistakes, so review it before you publish. See the <a href="eula.html">License Agreement</a>.</p></div>
+      </details>
+      <details>
+        <summary>Why does Windows warn me when I open it?</summary>
+        <div><p>The current builds aren't code-signed yet, so Windows SmartScreen shows a warning on first launch. The <a href="download.html#first-launch">download page</a> explains how to open it.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" aria-labelledby="cta-title">
+  <div class="wrap">
+    <h2 id="cta-title">Ship the devlog, not just the commits</h2>
+    <p>Download DevlogMaker for free, point it at your game and get your first draft script in minutes.</p>
+    <div class="cta">
+      <a class="btn lg" href="download.html">Download for free</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- footer:start (build_legal.py copies this footer into the generated legal pages) -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/wordmark-on-dark.png" alt="DevlogMaker" width="170" height="23">
+        <p>Narrated devlog videos from your git history, for Windows (macOS coming later).</p>
+      </div>
+      <div>
+        <h2>Product</h2>
+        <ul>
+          <li><a href="index.html#how">How it works</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="eula.html">License Agreement (EULA)</a></li>
+          <li><a href="licenses.html">Open-source licenses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="https://github.com/glumbis/devlogmaker-app/issues">Questions &amp; bug reports</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> DevlogMaker. No cookies, no tracking.</span>
+      <span>Claude is a trademark of Anthropic. ElevenLabs, YouTube, Discord, Bluesky, Mastodon, Godot and Unity are trademarks of their owners. DevlogMaker is not affiliated with or endorsed by them.</span>
+    </div>
+  </div>
+</footer>
+<!-- footer:end -->
+</body>
+</html>

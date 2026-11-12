@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download DevlogMaker for Windows</title>
+<meta name="description" content="Download DevlogMaker for Windows (64-bit). A macOS version is coming later. System requirements and first-launch instructions.">
+<link rel="canonical" href="https://glumbis.github.io/devlogmaker-app/download.html">
+<meta name="theme-color" content="#0F2640">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/app-icon.png">
+<link rel="preload" href="assets/fonts/saira-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DevlogMaker">
+<meta property="og:title" content="Download DevlogMaker">
+<meta property="og:description" content="Turn your game's git history into a narrated devlog video. For Windows.">
+<meta property="og:url" content="https://glumbis.github.io/devlogmaker-app/download.html">
+<meta property="og:image" content="https://glumbis.github.io/devlogmaker-app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DevlogMaker logo with the text: Your commits, turned into a narrated devlog video.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://glumbis.github.io/devlogmaker-app/assets/og.png">
+<script src="assets/config.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="index.html">
+      <img class="mark" src="assets/mark-on-dark.png" alt="" width="36" height="36">
+      <img class="word" src="assets/wordmark-on-dark.png" alt="DevlogMaker" width="150" height="20">
+    </a>
+    <ul class="nav-links">
+      <li class="hide-sm"><a href="index.html#how">How it works</a></li>
+      <li class="hide-sm"><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+      <li class="hide-sm"><a href="index.html#faq">FAQ</a></li>
+      <li><a class="btn" href="download.html" aria-current="page">Download</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <h1>Download DevlogMaker</h1>
+    <p>Free to download and use. Bring an ElevenLabs key, plus an Anthropic key or Claude Desktop.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="dl-grid">
+      <article class="dl-card" aria-labelledby="win-title">
+        <h2 id="win-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg>Windows</h2>
+        <p class="file">64-bit installer: <code>DevlogMaker_&lt;version&gt;_x64-setup.exe</code>. Installs for your user only, no admin rights needed.</p>
+        <a class="btn lg" data-download="windows" href="download.html">Download for Windows</a>
+      </article>
+      <article class="dl-card" aria-labelledby="mac-title">
+        <h2 id="mac-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg>macOS</h2>
+        <p class="file">An Apple Silicon (M1 or newer) version is planned. It is not available yet.</p>
+        <span class="btn lg outline" aria-disabled="true">Coming later</span>
+      </article>
+    </div>
+    <p class="note">By downloading or installing DevlogMaker you agree to the <a href="eula.html">End User License Agreement</a>. Open-source components are listed on the <a href="licenses.html">licenses page</a>.</p>
+  </div>
+</section>
+
+<section class="section alt" id="requirements" aria-labelledby="req-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="req-title">System requirements</h2>
+      <p>FFmpeg, Python and the rendering engine are bundled. The only thing you install yourself is git.</p>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th scope="col"></th><th scope="col">Windows</th><th scope="col">macOS</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Operating system</th><td>Windows 10 or 11, 64-bit (x64)</td><td>macOS 11 Big Sur or later</td></tr>
+          <tr><th scope="row">Processor</th><td>x64</td><td>Apple Silicon (M1 or newer). No Intel build yet.</td></tr>
+          <tr><th scope="row">Also needed</th><td colspan="2"><a href="https://git-scm.com/downloads">git</a>, and your game in a git repository</td></tr>
+          <tr><th scope="row">Internet</th><td colspan="2">Needed for the AI steps (script and narration) and for publishing. Rendering runs offline.</td></tr>
+          <tr><th scope="row">Disk space</th><td colspan="2">Room for the app plus your clips and rendered videos (a 1080p video is usually tens of MB per minute)</td></tr>
+          <tr><th scope="row">AI</th><td colspan="2">An <a href="https://elevenlabs.io/">ElevenLabs</a> API key for narration, and either an <a href="https://console.anthropic.com/">Anthropic</a> API key or <a href="https://claude.ai/download">Claude Desktop</a> for the script</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="first-launch" aria-labelledby="first-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="first-title">Opening it the first time</h2>
+      <p>Current builds are not yet code-signed, so your system shows a warning the first time you open DevlogMaker. This is expected for unsigned apps; only download DevlogMaker from this website.</p>
+    </div>
+    <div class="dl-grid">
+      <div class="dl-card">
+        <h3>Windows SmartScreen</h3>
+        <p>If you see "Windows protected your PC":</p>
+        <ol>
+          <li>Click <strong>More info</strong>.</li>
+          <li>Check that the app name is the DevlogMaker installer, then click <strong>Run anyway</strong>.</li>
+          <li>Follow the installer. You'll find DevlogMaker in the Start menu.</li>
+        </ol>
+      </div>
+      <div class="dl-card">
+        <h3>macOS Gatekeeper</h3>
+        <p>If macOS says the app can't be opened or the developer can't be verified:</p>
+        <ol>
+          <li>Drag DevlogMaker from the disk image into <strong>Applications</strong>.</li>
+          <li>In Applications, right-click (or Control-click) DevlogMaker and choose <strong>Open</strong>, then <strong>Open</strong> again.</li>
+          <li>On newer macOS versions, if there's no Open button: go to <strong>System Settings → Privacy &amp; Security</strong>, scroll down and click <strong>Open Anyway</strong>.</li>
+        </ol>
+      </div>
+    </div>
+    <h3 class="after-title">After that</h3>
+    <p>The app walks you through setup: add your API keys, pick a narrator voice, pick your game's folder, and fix anything the checks flag. Then choose <strong>New devlog</strong>. Using Claude Desktop? Open <strong>Settings &rarr; Claude Desktop &rarr; Connect</strong>, restart Claude Desktop and ask it to set up your game.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/wordmark-on-dark.png" alt="DevlogMaker" width="170" height="23">
+        <p>Narrated devlog videos from your git history, for Windows (macOS coming later).</p>
+      </div>
+      <div>
+        <h2>Product</h2>
+        <ul>
+          <li><a href="index.html#how">How it works</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="eula.html">License Agreement (EULA)</a></li>
+          <li><a href="licenses.html">Open-source licenses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="https://github.com/glumbis/devlogmaker-app/issues">Questions &amp; bug reports</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> DevlogMaker. No cookies, no tracking.</span>
+      <span>Claude is a trademark of Anthropic. ElevenLabs, YouTube, Discord, Bluesky, Mastodon, Godot and Unity are trademarks of their owners. DevlogMaker is not affiliated with or endorsed by them.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
